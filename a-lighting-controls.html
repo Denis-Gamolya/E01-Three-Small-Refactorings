@@ -49,10 +49,9 @@
 
     function update() {
       const item = presets[currentIndex];
-        label.textContent = item.name;
-        swatch.style.backgroundColor = item.color;
-      }
-
+      label.textContent = item.name;
+      swatch.style.backgroundColor = item.color;
+    }
 
     document.querySelector("#next").addEventListener("click", () => {
       currentIndex = (currentIndex + 1) % presets.length;
